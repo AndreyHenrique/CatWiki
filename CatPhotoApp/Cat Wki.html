@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <!-- Titulo que fica visivel pelo navegador. -->
+    <title>Wiki de Gatos</title>
+  </head>
+
+   <body>
+    <main>
+      <h1>Wiki de Gatos</h1>
+
+      <!-- Primeira seção -->
+      <section>
+        <h2>Fotos de Gatos</h2>
+        <p>Veja mais <a target="_blank" href="https://freecatphotoapp.com">fotos de gatos</a> em nossa galeria.</p>
+        <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+      </section>
+
+      <section>
+        <h2>Curiosidades de gatos</h2>
+        <ul>
+          <li>Em média um gato passa 2/3 do dia dormindo. Isso significa que <strong>em 9 anos de vida, apenas está acordado 3 anos</strong></li>
+          <li>Quando um gato persegue uma presa, ao contrário de um cão ou humano, mantém a cabeça sempre para baixo</li>
+          <li>Alguns gatos já sobreviveram a quedas de 20 metros, devido ao reflexo de endireitamento. Os seus olhos, os órgãos e ouvido interno, dizem ao gato onde é que ele está no espaço, para que ele consiga aterrar em pé. Mesmo os gatos sem cauda possuem esta capacidade</li>
+          <img src="https://www.naturalis-petfood.com/wp-content/uploads/2022/01/image050.jpg" alt="Gato dormindo">
+        </ul>
+      </section>
+
+      <!-- Segunda seção -->
+      <section>
+        <!-- Lista -->
+        <h2>Lista de gatos</h2>
+        <h3>Coisas que gatos amam:</h3>
+        <ul>
+          <li>beliscão de gato</li>
+          <li>ponteiros laser</li>
+          <li>lasanha</li>
+        </ul>
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+          <figcaption>Gatos <em>amam</em> lasanha.</figcaption>  
+        </figure>
+        <!-- Top 3 -->
+        <h3>Top 3 coisas que gatos odeiam:</h3>
+        <ol>
+          <li>tratamento de pulgas</li>
+          <li>trovão</li>
+          <li>outros gatos</li>
+        </ol>
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+          <figcaption>Gatos <strong>odeiam</strong> outros gatos.</figcaption>  
+        </figure>
+      </section>
+
+    <!-- Terceira Seção -->
+      <section>
+        <h2>Formulário de gato</h2>
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+          <!-- Formulário 1 -->
+          <fieldset>
+            <legend>O seu gato é um gato que prefere interior ou de exterior?</legend>
+            <label><input id="interior" type="radio" name="interior-exterior" value="interior" checked> Interior</label>
+            <label><input id="exterior" type="radio" name="interior-exterior" value="exterior"> Exterior</label>
+          </fieldset>
+          <!--Formulário 2-->
+          <fieldset>
+            <legend>Qual a personalidade do seu gato?</legend>
+            <input id="Amoroso" type="checkbox" name="personalidade" value="Amoroso" checked> <label for="Amoroso">Amoroso</label>
+            <input id="Preguiçoso" type="checkbox" name="personalidade" value="Preguiçoso"> <label for="Preguiçoso">Preguiçoso</label>
+            <input id="energetico" type="checkbox" name="personalidade" value="energetico"> <label for="energetico">Energetico</label>
+          </fieldset>
+          <input type="text" name="catphotourl" placeholder="URL da foto de gato" required>
+          <button type="submit">Submissão</button>
+        </form>
+      </section>
+
+    </main>
+    <!-- Rodapé -->
+    <footer>
+      <p>
+        Sem direitos autorais - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+      </p>
+    </footer>
+
+  </body>
+</html>
